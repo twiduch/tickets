@@ -1,9 +1,10 @@
-tickets
+Tickets
 =======
 
 Please have running Postgres and ElasticSearch on local machine
 
-For setup run:
+Setup
+=====
 rake db:setup
 
 Tests
