@@ -8,6 +8,7 @@ Setup
 rake db:setup
 
 There are 2 users
+
 username: andy
 password: andyandy
 
