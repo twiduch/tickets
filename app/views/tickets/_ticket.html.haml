@@ -1,0 +1,20 @@
+.ticket-description
+  %p.subject
+    Subject:
+    = ticket.subject
+    
+  %p.created-by
+    Created by:
+    = ticket.creator_name
+    
+  %p.description
+    Description:
+    = ticket.body
+    
+  %p.owner
+    Owner:
+    = ticket.owner.try(:username).try(:capitalize)
+    
+  %p.status
+    Status:
+    = ticket.status.try(:name)

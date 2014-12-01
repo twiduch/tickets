@@ -1,0 +1,71 @@
+
+header.navbar {
+  height: 60px;
+  border: 2px solid black;
+  color: white;
+  background-color: black;
+  
+  .search{
+    float: right;
+    color: black;
+    position: relative;
+    top: -38px;
+    margin-right: 20px;
+    .btn {display: none}
+  }
+  
+  .title {
+    font: 25px arial, sans-serif;
+    margin-left: 30px;
+    margin-top: 12px;
+    display: inline-block;
+  }
+
+  nav {
+    display: inline-block;
+    margin: 20px 40px;
+    a{
+      text-decoration: none;
+      color: white;
+      &:hover {color: yellow}
+      &.current { color: yellow }
+     }
+  }
+
+  .navbar-login {
+    float: right;
+    font: 15px arial, sans-serif;
+    a {
+      margin: 20px;
+      text-decoration: none;
+      color: white;
+      &:hover {color: yellow}
+    }
+    .input {
+      margin-right: 80px;
+      margin-top: 5px;
+      margin-bottom: 0px;
+      float: right;
+      clear: both;
+      input { 
+        width: 180px;
+        color: black;
+      }
+      label { margin-right: 5px}
+    }
+    .btn { 
+      color: black;
+      float: right;
+      clear: right;
+      position: relative;
+      top: -38px;
+      margin-right: 10px;
+    }
+  }
+}
+
+#main{
+  .messages{
+    margin-top: 10px;
+  }
+}

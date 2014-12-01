@@ -1,0 +1,33 @@
+// Place all the styles related to the tickets controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body.tickets, body.search{
+  h1 {margin: 20px 15px }
+  .ticket-description {
+    margin: 30px;
+  }
+}
+
+body.tickets-new .content{
+  input { 
+    width: 300px;
+    &.btn { width: 150px; }
+  }
+  textarea {
+    width: 600px;
+    height: 200px;
+  }
+}
+
+body.tickets-index .content,
+body.search .content {
+  table, th, td { 
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin-left: 30px;
+  }
+  th,td {
+    padding: 5px 10px;
+  }
+}

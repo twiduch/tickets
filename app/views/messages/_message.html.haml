@@ -1,0 +1,7 @@
+- author = message.author.try(:first_name) || message.ticket.creator_name
+.message
+  .body= message.body
+  .author
+    Author:
+    %span= author
+ 

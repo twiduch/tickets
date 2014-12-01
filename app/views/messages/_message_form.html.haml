@@ -1,0 +1,7 @@
+= simple_form_for @new_message do |f|
+  = f.input :body, label: 'Response'
+  = f.hidden_field :ticket_id, value: @ticket.id
+  = f.input(:new_status_id, collection: Status.all, include_blank: false) if logged_in?
+  = f.input(:new_owner_id, collection: User.order(:username), 
+            label_method: :username, include_blank: false) if logged_in?
+  = f.button :submit, 'Answer'

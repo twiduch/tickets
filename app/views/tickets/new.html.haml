@@ -1,0 +1,8 @@
+%h1 Create new ticket:
+= simple_form_for @ticket do |f|
+  = f.input :creator_name, label: 'Your name', required: false
+  = f.input :creator_email, label: 'Your email', required: false
+  = f.input :department
+  = f.input :subject, required: false
+  = f.input :body, label: 'Description', required: false
+  = f.button :submit, 'Create Ticket'

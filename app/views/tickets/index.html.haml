@@ -1,0 +1,7 @@
+%h1= @title
+%table
+  %tr
+    %th Subject
+    %th Status
+    %th Owner
+  = render partial: 'tickets/ticket_headline', collection: @tickets

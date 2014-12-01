@@ -1,0 +1,8 @@
+- ticket = ticket_headline
+%tr 
+  %td
+    = link_to(ticket.subject, ticket)
+  %td
+    = ticket.status.name
+  %td
+    = ticket.owner.try(:username)
